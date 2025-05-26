@@ -115,7 +115,8 @@ curl -X POST "$API_ENDPOINT/openai/deployments/gpt-4o/chat/completions?api-versi
 
 ## Others
 
-### To create an instance in Azure OpenAI, the instance name and the deployment name need to be consistent
+### Configuration requirements
+To create an instance in Azure OpenAI, the instance name and the deployment name need to be consistent
 
 ![image](https://github.com/user-attachments/assets/b4af6cb2-01c5-4e2f-9b4d-db56bcba486a)
 
