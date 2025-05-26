@@ -28,7 +28,7 @@ Enter the container application creation through Azure Portal
 ![image](https://github.com/user-attachments/assets/dc9fcd27-48c6-4c69-8bbd-54f81cb603bf)
 
 
-Configure the container image for implementing load balancing and fill it in: duojie/azure-openai-load-balancer-app:v1.3
+Configure the container image for implementing load balancing and fill it in: sulitu/azure-openai-load-balancer-app:v1.3
 
 ![image](https://github.com/user-attachments/assets/81356f43-8f5c-4814-a24a-d3beb09b8e71)
 
