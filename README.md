@@ -2,6 +2,7 @@
 
 A FastAPI application that provides load balancing across multiple Azure OpenAI instances.
 
+
 ## Features
 
 - Load balancing across multiple Azure OpenAI endpoints
@@ -11,35 +12,34 @@ A FastAPI application that provides load balancing across multiple Azure OpenAI 
 - Docker container ready for Azure Container Apps
 
 
-## Architecture
-![image](https://github.com/user-attachments/assets/2523aa7a-6179-48b2-8c9c-654566b27678)
-
-## Deployment steps
-
-
-## Using in Azure Container Apps
-
-1. Build and push the container to your registry
-2. Create an Azure Container App
-3. Configure the container app with either:
-   - Mount a persistent volume for `/config`
-   - Set the `OPENAI_INSTANCES` environment variable with your configuration
-
 ## API Usage
 
 Use the application exactly as you would use the Azure OpenAI API. All requests are transparently forwarded to the backend instances with load balancing.
 
-## Deployment with Docker Compose
 
-### Quick Start
+## Architecture
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/azure-openai-load-balancer-app.git
-   cd azure-openai-load-balancer-app
-   ```
+![image](https://github.com/user-attachments/assets/2523aa7a-6179-48b2-8c9c-654566b27678)
 
-### 1. Environment Variables
+
+## Deployment steps
+
+## Using in Azure Container Apps
+Enter the container application creation through Azure Portal
+![image](https://github.com/user-attachments/assets/dc9fcd27-48c6-4c69-8bbd-54f81cb603bf)
+
+Configure the container image for implementing load balancing and fill it in: duojie/azure-openai-load-balancer-app:v1.3
+![image](https://github.com/user-attachments/assets/81356f43-8f5c-4814-a24a-d3beb09b8e71)
+
+Configure the network rules and set the port to 8000
+![image](https://github.com/user-attachments/assets/2fd5314a-aeba-4247-b083-d3e86017553c)
+
+Click "Create Container Application Instance"
+
+
+
+
+## Environment Variables
 
 - `OPENAI_INSTANCES`: A JSON string containing the OpenAI instances configuration
 
