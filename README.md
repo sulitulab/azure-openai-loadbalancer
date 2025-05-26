@@ -24,16 +24,20 @@ Use the application exactly as you would use the Azure OpenAI API. All requests 
 
 ## Using in Azure Container Apps
 Enter the container application creation through Azure Portal
+
 ![image](https://github.com/user-attachments/assets/dc9fcd27-48c6-4c69-8bbd-54f81cb603bf)
 
+
 Configure the container image for implementing load balancing and fill it in: duojie/azure-openai-load-balancer-app:v1.3
+
 ![image](https://github.com/user-attachments/assets/81356f43-8f5c-4814-a24a-d3beb09b8e71)
 
+
 Configure the network rules and set the port to 8000
+
 ![image](https://github.com/user-attachments/assets/2fd5314a-aeba-4247-b083-d3e86017553c)
 
 Click "Create Container Application Instance"
-
 
 
 
@@ -65,7 +69,9 @@ Create a JSON file with the following structure:
 ************
 
 ### Configure the container application environment variables
+
 ![image](https://github.com/user-attachments/assets/46e25eaf-92a9-45df-bbde-3b58d672ba67)
+
 
 ![image](https://github.com/user-attachments/assets/80789428-4fd4-4675-accb-2ee90f5d9b17)
 
@@ -75,7 +81,9 @@ Click Save - Create
 ## Send a test request
 
 View the ACA container application overview to obtain the Endpoint address of ACA.
+
 ![image](https://github.com/user-attachments/assets/02ed2b4f-95bb-4ba8-852f-36e8bfdbc53f)
+
 
 Test request command
 ```bash
@@ -98,8 +106,6 @@ curl -X POST "$API_ENDPOINT/openai/deployments/gpt-4o/chat/completions?api-versi
           "max_tokens": 300
         }'
 ```
-Parameter description:
-
 
 ### Parameter Description
 
@@ -110,7 +116,9 @@ Parameter description:
 ## Others
 
 ### To create an instance in Azure OpenAI, the instance name and the deployment name need to be consistent
+
 ![image](https://github.com/user-attachments/assets/b4af6cb2-01c5-4e2f-9b4d-db56bcba486a)
+
 
 ### Request format
 Only the domain name of the requested api needs to be replaced. The references for other path parameters and query parameters are the same as those for Azure OpenAI.
