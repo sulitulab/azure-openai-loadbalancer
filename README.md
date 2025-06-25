@@ -25,17 +25,20 @@ Use the application exactly as you would use the Azure OpenAI API. All requests 
 ## Using in Azure Container Apps
 Enter the container application creation through Azure Portal
 
-![image](https://github.com/user-attachments/assets/dc9fcd27-48c6-4c69-8bbd-54f81cb603bf)
+![image](https://github.com/user-attachments/assets/15d3843f-7606-402d-a41b-92d24ceb7ffc)
+
 
 
 Configure the container image for implementing load balancing and fill it in: sulitu/azure-openai-load-balancer-app:v1.3
 
-![image](https://github.com/user-attachments/assets/81356f43-8f5c-4814-a24a-d3beb09b8e71)
+![image](https://github.com/user-attachments/assets/26f30329-3e64-4287-b815-08f0301d2058)
+
 
 
 Configure the network rules and set the port to 8000
 
-![image](https://github.com/user-attachments/assets/2fd5314a-aeba-4247-b083-d3e86017553c)
+![image](https://github.com/user-attachments/assets/abcf6b74-05df-4d5f-a2cc-e8e19b2393c0)
+
 
 Click "Create Container Application Instance"
 
